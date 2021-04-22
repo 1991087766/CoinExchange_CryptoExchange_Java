@@ -72,6 +72,11 @@
             <artifactId>druid</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
@@ -79,8 +84,20 @@
 			<groupId>com.sparkframework</groupId>
 			<artifactId>spark-core</artifactId>
 			<scope>system</scope>
-			<systemPath>E:/10_Exchange/src/BizzanExchange_framework/jar/spark-core-2.6.0.jar</systemPath>
+			<systemPath>/Users/navyxu/code/exchange/CoinExchange_CryptoExchange_Java/00_framework/jar/spark-core-2.6.0.jar</systemPath>
 		</dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.directory.studio/org.apache.commons.lang -->
+        <dependency>
+            <groupId>org.apache.directory.studio</groupId>
+            <artifactId>org.apache.commons.lang</artifactId>
+            <version>2.6</version>
+        </dependency>
     </dependencies>
     <profiles>
         <profile>

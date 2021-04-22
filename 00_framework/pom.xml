@@ -34,6 +34,7 @@
 		<!-- lookup parent from repository -->
 	</parent>
 
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.jdk_version>1.8</project.build.jdk_version>
@@ -147,12 +148,12 @@
 			<dependency>
 				<groupId>commons-beanutils</groupId>
 				<artifactId>commons-beanutils-core</artifactId>
-				<version>${commons-beanutils_version}</version>
+				<version>1.8.3</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
-				<version>${commons-lang3_version}</version>
+				<version>3.4</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-logging</groupId>
@@ -279,6 +280,20 @@
 	        </dependency>
 		</dependencies>
 	</dependencyManagement>
+
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<project.profile>application</project.profile>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+	</profiles>
+
 	<build>
 		<plugins>
 			<plugin>
